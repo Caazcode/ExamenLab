@@ -151,7 +151,7 @@ public class Aguilar_Carlos_E1 {
 
                 System.out.println("La cadena ingresada contiene " + contadorVocales + " vocales en minúsculas.");
             } else if (opcion == 5) {
-                System.out.println("Saliendo del programa...");
+                System.out.println("HASTA LUEGO...");
             } else {
                 System.out.println("Opción no válida. Intente de nuevo.");
             }
