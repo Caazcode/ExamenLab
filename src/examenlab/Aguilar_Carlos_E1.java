@@ -30,11 +30,15 @@ public class Aguilar_Carlos_E1 {
             System.out.println("5. Salir");
             System.out.print("Seleccione una opción: ");
             opcion = scanner.nextInt();
-            scanner.nextLine(); // Limpiar el buffer
+            scanner.nextLine(); 
 
             if (opcion == 1) {
                 // Opción 1: Pirámide
-                int fila = 6;
+                
+                 System.out.print("Ingrese el número de filas para la pirámide: ");
+                int fila = scanner.nextInt();
+                scanner.nextLine();
+
                 int valor1 = 1;
                 int incremento = 2;
                 for (int i = 1; i <= fila; i++) {
@@ -57,7 +61,7 @@ public class Aguilar_Carlos_E1 {
                 do {
                     System.out.print("Ingrese un número entero: ");
                     numero = scanner.nextInt();
-                    scanner.nextLine(); // Limpiar el buffer
+                    scanner.nextLine(); 
 
                     if (numero > maximo) {
                         maximo = numero;
@@ -67,7 +71,7 @@ public class Aguilar_Carlos_E1 {
                     contador++;
 
                     System.out.print("¿Desea ingresar otro número? (si/no): ");
-                    respuesta = scanner.next(); // Cambiar a next() para evitar problemas con nextLine
+                    respuesta = scanner.next(); 
                 } while (respuesta.equalsIgnoreCase("si"));
 
                 if (contador > 0) {
@@ -85,7 +89,7 @@ public class Aguilar_Carlos_E1 {
                 int canalesHD = 0;
                 int canalesNormales = 0;
                 int costoCanales = 0;
-                String respuesta;
+                String respuesta = null;
 
                 do {
                     System.out.print("Ingrese el tipo de canal (HD/NORMAL): ");
@@ -143,6 +147,7 @@ public class Aguilar_Carlos_E1 {
                         contadorVocales++;
                     }
                 }
+                        
 
                 System.out.println("La cadena ingresada contiene " + contadorVocales + " vocales en minúsculas.");
             } else if (opcion == 5) {
@@ -155,3 +160,4 @@ public class Aguilar_Carlos_E1 {
         scanner.close();
     }
 }
+
