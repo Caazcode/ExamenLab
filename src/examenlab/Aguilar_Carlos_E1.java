@@ -143,12 +143,18 @@ public class Aguilar_Carlos_E1 {
 
                 for (int i = 0; i < cadena.length(); i++) {
                     char caracter = cadena.charAt(i);
-                    if (caracter == 'a' || caracter == 'e' || caracter == 'i' || caracter == 'o' || caracter == 'u') {
-                        contadorVocales++;
+                    switch (caracter) {
+                        case 'a':
+                        case 'e':
+                        case 'i':
+                        case 'o':
+                        case 'u':
+                            contadorVocales++;
+                            break;
+                        default:
+                            break;
                     }
                 }
-                        
-
                 System.out.println("La cadena ingresada contiene " + contadorVocales + " vocales en minúsculas.");
             } else if (opcion == 5) {
                 System.out.println("HASTA LUEGO...");
